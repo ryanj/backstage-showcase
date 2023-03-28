@@ -34,7 +34,7 @@ env:
   REGISTRY: quay.io
   PASSWORD_KEY: QUAY_TOKEN
   USERNAME: ${{ vars.QUAY_USERNAME }}
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: rhsummit23backstage/backstage-showcase
 
 jobs:
   docker-build:
