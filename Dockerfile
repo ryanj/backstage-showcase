@@ -1,7 +1,7 @@
 # Stage 1 - Install dependencies
 FROM registry.access.redhat.com/ubi9/nodejs-18-minimal:latest AS deps
 USER 0
-
+ 
 # Install yarn
 RUN \
   curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo && \
