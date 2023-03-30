@@ -9,21 +9,10 @@ metadata:
 spec:
   tls:
     - hosts:
-      - janus-idp.apps.smaug.na.operate-first.cloud
-      - showcase.janus-idp.io
+      - backstage-janus-idp.apps.janus-idp.w6gk.p1.openshiftapps.com
       secretName: janus-idp-cert
   rules:
-    - host: janus-idp.apps.smaug.na.operate-first.cloud
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: backstage
-                port:
-                  number: 7007
-    - host: showcase.janus-idp.io
+    - host: backstage-janus-idp.apps.janus-idp.w6gk.p1.openshiftapps.com
       http:
         paths:
           - path: /
