@@ -78,19 +78,11 @@ proxy:
 # and an external cloud storage when deploying TechDocs for production use-case.
 # https://backstage.io/docs/features/techdocs/how-to-guides#how-to-migrate-from-techdocs-basic-to-recommended-deployment-approach
 techdocs:
-  builder: 'external'
+  builder: 'local'
   generator:
     runIn: 'local'
   publisher:
-    type: 'awsS3'
-    awsS3:
-      bucketName: ${BUCKET_NAME}
-      region: ${BUCKET_REGION_VAULT}
-      endpoint: https://s3-openshift-storage.apps.smaug.na.operate-first.cloud
-      s3ForcePathStyle: true
-      credentials:
-        accessKeyId: ${AWS_ACCESS_KEY_ID}
-        secretAccessKey: ${AWS_SECRET_ACCESS_KEY}
+    type: 'local'
 
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
