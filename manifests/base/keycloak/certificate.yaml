@@ -4,7 +4,7 @@ metadata:
   name: keycloak-certificate
 spec:
   dnsNames:
-    - keycloak.apps.smaug.na.operate-first.cloud
+    - keycloak.apps.janus-idp.w6gk.p1.openshiftapps.com
   issuerRef:
     name: letsencrypt
   secretName: keycloak-cert

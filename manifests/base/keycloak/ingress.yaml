@@ -5,10 +5,10 @@ metadata:
 spec:
   tls:
     - hosts: 
-      - keycloak.apps.smaug.na.operate-first.cloud
+      - keycloak.apps.janus-idp.w6gk.p1.openshiftapps.com
       secretName: keycloak-cert
   rules:
-    - host: keycloak.apps.smaug.na.operate-first.cloud
+    - host: keycloak.apps.janus-idp.w6gk.p1.openshiftapps.com
       http:
         paths:
           - pathType: Prefix
